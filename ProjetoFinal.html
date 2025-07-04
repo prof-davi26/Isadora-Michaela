@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="ProjetoFinal.css" />
+</head>
+<body>
+    <h1>Gerenciador de Tarefas</h1>
+<button class="botao-gradiente">Clique aqui</button>
+
+<div id="relogio" style="text-align:center; font-size: 24px; font-weight: bold; margin-bottom: 20px;"></div>
+
+    <div class="form-pessoa">
+        <input type="text" id="nomePessoa" placeholder="Nome da Pessoa"/>
+        <button onclick="adicionarPessoa()">Adicionar Pessoa</button>
+    </div>
+
+    <div id="tarefasContainer" class="container"></div>
+
+    <!-- Modal para mostar detalhe da tarefa -->
+     <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Detahlhes da tarefa</h2>
+            <p><strong>Descrição</strong> <span id="modal-desc"></span></p>
+            <p><strong>Prazo</strong> <span id="modal-prazo"></span></p>
+            <div>
+                <strong>Checklist</strong>
+                <ul id="modal-checklist"></ul>
+                <p id="modal-progresso"></p>
+            </div>
+        </div>
+     </div>
+    <script src="ProjetoFinal.js"></script>
+</body>
+</html>
